@@ -1,0 +1,388 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.NavigasiBar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    background: #1b3250;
+}
+
+#BukaSidebar {
+    margin-left: 18px;
+    color: white;
+    padding: 20px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#BukaSidebar:hover {
+    color: #1b3250;
+}
+
+.Logo {
+    display: flex;
+    margin-right: 250px;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+.Logo img {
+    height: 80px;
+}
+
+.Logo a {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff9800;  
+    text-decoration: none;
+}
+
+.NavigasiIsi {
+    display: flex;
+    gap: 5px;
+}
+
+.NavigasiIsi li {
+    list-style: none;
+}
+
+.NavigasiIsi li a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.NavigasiIsi li a:hover {
+    color: #48A6A7;
+    text-decoration: underline;   
+}
+
+.Sidebar {
+    position: fixed;
+    border-radius: 50px;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background: #1b3250;
+    padding: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.Sidebar.open {
+    left: 0;
+}
+
+.Sidebar #TutupSidebar {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    background: #ff9800;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Sidebar #TutupSidebar:hover {
+    background: #ff9800;
+    color: #1b3250;
+}
+
+.Profil {
+    text-align: center;
+    font-family: 'Comic Sans MS', sans-serif;
+    margin-bottom: 15px;
+}
+
+.Profil img {
+    margin-top: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.DeskripsiProfil {
+    text-align: center;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    background: #ff9800;
+    color: white;
+    border-radius: 20px;
+}
+
+.SosialMedia {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+}
+
+.SosialMedia a {
+    margin: 20px 5px;
+}
+
+.SosialMedia img {
+    width: 32px;
+    height: 32px;
+}
+
+.Beranda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: url(ImagesKesehatan/BackgroundBeranda2.jpg);
+    color: black;
+}
+
+.IsiKonten {
+    max-width: 50%;
+    text-align: center;
+}
+
+.IsiKonten H2 {
+    font-size: 35px;
+    font-family: 'Comic Sans MS', sans-serif;
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+
+.IsiKonten p {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', sans-serif;
+    margin-bottom: 13px;
+    margin-left: 80px;
+}
+
+.SubMenuUtama {
+    position: relative;
+    display: inline-block;
+    padding: 20;
+    margin-top: 15px;
+    margin-left: 90px;
+}
+
+#TombolSubMenu {
+    background: #ff9800;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.SubMenu {
+    position: absolute;
+    background: #1b3250;
+    border-radius: 20px;
+    display: none;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 180px;
+}
+
+.SubMenuUtama:hover .SubMenu {
+    display: block;
+}
+
+.SubMenuUtama li a {
+    text-decoration: none;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.SubMenu li a:hover {
+    padding: 10px 20px;
+    background: #ff9800;
+    color: white;
+}
+
+.GambarDokter {
+    width: 560px;
+}
+
+.Galeri {
+    max-width: 2000px;
+    background: url(ImagesKesehatan/Back22.jpg);
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+.IconGaleri {
+    background :#1b3250;
+    border-radius: 50px;
+}
+
+.IconGaleri img {
+    width: 100%;
+    height: 200px;
+}
+
+.GaleriIsi {
+    padding: 20px;
+    text-align: center;
+}
+
+.GaleriIsi h2 {
+    font-size: 18px;
+    color: #ff9800;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.GaleriIsi a {
+    display: inline-block;
+    font-family: 'Comic Sans MS', sans-serif;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.GaleriIsi a:hover {
+    color: #ff9800;
+}
+
+#Kontak {
+    background: url(ImagesKesehatan/BackgroundBeranda.jpg);
+}
+
+.BagianKontak {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    margin: 50px auto;
+}
+
+.KontakInfo {
+    background: #1b3250;
+    color: white;
+    padding: 30px;
+}
+
+.KontakInfo h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.KontakInfo p {
+    font-family:'Comic Sans MS', sans-serif;
+}
+
+.KontakInfo span {
+    color: #ff9800;
+}
+
+.InfoAlamat {
+    background-color: #ff9800;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.BagianMap {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
+
+.KontakFormulir {
+    background: white;
+    padding: 80px;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.KontakFormulir form {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.KontakFormulir h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.KontakFormulir input {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none;
+}
+
+button {
+    background: #ff9800;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    color: black;
+}
+
+footer {
+    text-align: center;
+    background: #1b3250;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
